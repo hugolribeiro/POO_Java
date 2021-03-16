@@ -1,0 +1,41 @@
+Crie o jogo do Dinossauro - Skeep
+
+O Skeep é um dinossauro e será um personagem que possui as seguintes características:
+
+energia  (pontuação de 0 a 10)
+velocidade (pontuação de 0 a 10)
+temperatura (quente, regular, frio)
+humor   (1 - triste; 2 - entediado, 3 - regular, 4 - animado, 5 - feliz)
+
+
+    Comportamentos:
+
+pular()
+correr()
+comer()
+brincar()
+tomarSol()
+ficarNaSombra()
+    Regras:
+
+O dinossauro precisa tomar Sol para ter velocidade, além de deixa-lo com mais humor
+Precisa comer para ter energia, e comer melhora o humor também
+Para cada ponto de velocidade ganho ele perde um ponto de energia
+correr gasta energia deixa o humor feliz
+ficarNaSombra recupera energia deixa o humor triste
+brincar gasta energia e deixa o humor feliz
+pular gasta energia e deixa o humor feliz
+
+Faça uma classe chamada Dinossauro, contendo as características e comportamentos do Skeep.
+Crie uma classe de Teste com o método main, que execute as seguintes atividades:
+Crie uma instância do classe Dinossauro chamada de Skeep
+Crie uma instância da classe Scanner chamada de scan
+Em um loop inifinito
+Mostre na tela as características do objeto Skeep
+Mostre um menu de opções para o usuário com as seguintes opções:
+(P)ular           co(R)rer               (C)omer
+(B)rincar        Tomar (S)ol          Ficar na S(O)mbra
+Pegue a primeira letra do que o usuário digitar como sendo a opção escolhida
+String textoMaiusculo = scan.nextLine().toUpperCase();
+char letra = textoMaiusculo.charAt(0);
+Conforme a opção escolhida execute o método correspondente no objeto Skeep
