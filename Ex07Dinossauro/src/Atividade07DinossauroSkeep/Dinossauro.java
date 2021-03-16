@@ -110,12 +110,13 @@ public class Dinossauro {
         System.out.println("Velocidade: " + this.getVelocidade());
         System.out.println("Temperatura: " + this.getTemperatura());
         System.out.println("Humor: " + this.getHumor());
-        System.out.println("               __\n" +
-                           "              / _)\n" +
-                           "     _.----._/ /\n" +
-                           "    /         /\n" +
-                           " __/ (  | (  |\n" +
-                           "/__.-'|_|--|_|");
+        System.out.println("""
+                               __
+                              / _)
+                     _.----._/ /
+                    /         /
+                 __/ (  | (  |
+                /__.-'|_|--|_|""");
         System.out.println("------------------");
     }
 }

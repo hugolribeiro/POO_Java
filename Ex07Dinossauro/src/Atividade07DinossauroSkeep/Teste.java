@@ -18,10 +18,11 @@ public class Teste {
     public static void opcoes(Dinossauro dino){
         Scanner scan = new Scanner(System.in);
         System.out.println("Escolha uma das opções: ");
-        System.out.println("(P)ular       co(R)rer        (C)omer\n" +
-                           "(B)rincar     Tomar (S)ol     Ficar na S(O)mbra\n" +
-                           "(E)ncerrar o programa\n" +
-                           "------------------");
+        System.out.println("""
+                (P)ular       co(R)rer        (C)omer
+                (B)rincar     Tomar (S)ol     Ficar na S(O)mbra
+                (E)ncerrar o programa
+                ------------------""");
         String textoMaiusculo = scan.nextLine().toUpperCase();
         char letra = textoMaiusculo.charAt(0);
 
